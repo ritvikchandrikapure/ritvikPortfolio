@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -5,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
+=======
+>>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
 const skills = [
 
   {
@@ -14,7 +17,12 @@ const skills = [
       "HTML5",
       "CSS3",
       "JavaScript",
+<<<<<<< HEAD
       "React.js"
+=======
+      "React.js",
+      "Redux"
+>>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
     ]
   },
 
@@ -34,9 +42,14 @@ const skills = [
     title: "DATABASE",
     items: [
       "MongoDB",
+<<<<<<< HEAD
       "Data Modeling",
       "CRUD",
       "Authentication"
+=======
+      "MySQL",
+      "CRUD",
+>>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
     ]
   },
 
@@ -44,10 +57,18 @@ const skills = [
     number: "04",
     title: "OTHER",
     items: [
+<<<<<<< HEAD
       "Python",
       "OpenCV",
       "Git",
       "Problem Solving"
+=======
+      
+      "Git and GitHub",
+      "Problem Solving",
+      "vercel",
+      "Netlify",
+>>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
     ]
   }
 
@@ -55,6 +76,7 @@ const skills = [
 
 
 function Skills() {
+<<<<<<< HEAD
 
   const section = useRef(null);
 
@@ -93,6 +115,11 @@ function Skills() {
 
     <section
       ref={section}
+=======
+  return (
+
+    <section
+>>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
       id="skills"
       className="skills section"
     >
