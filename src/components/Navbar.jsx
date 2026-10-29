@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-import { useEffect, useRef } from "react";
-=======
 import { useEffect, useRef, useState } from "react";
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
 import gsap from "gsap";
 
 function Navbar() {
   const nav = useRef(null);
   const button = useRef(null);
-<<<<<<< HEAD
-=======
   const menuRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,7 +17,6 @@ function Navbar() {
     });
     closeMenu();
   };
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
 
   useEffect(() => {
     const navElement = nav.current;
@@ -38,12 +31,8 @@ function Navbar() {
       // NAVBAR ENTRY ANIMATION
       // ================================
 
-<<<<<<< HEAD
-      gsap.from(".nav-element", {
-=======
       gsap.from(".nav-element:not(.nav-talk)", {
         y: -30,
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
         opacity: 0,
         duration: 0.8,
         stagger: 0.1,
@@ -168,8 +157,6 @@ function Navbar() {
     };
   }, []);
 
-<<<<<<< HEAD
-=======
   // ================================
   // MOBILE MENU OPEN / CLOSE
   // ================================
@@ -226,7 +213,6 @@ function Navbar() {
     };
   }, [menuOpen]);
 
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
   return (
     <nav
       ref={nav}
@@ -237,10 +223,7 @@ function Navbar() {
       <a
         href="#home"
         className="nav-element nav-logo"
-<<<<<<< HEAD
-=======
         onClick={closeMenu}
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
       >
         RITVIK<span>.</span>
       </a>
@@ -258,10 +241,7 @@ function Navbar() {
         <a
           href="#skills"
           className="nav-element"
-<<<<<<< HEAD
-=======
           onClick={jumpToSkills}
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
         >
           SKILLS
         </a>
@@ -290,8 +270,6 @@ function Navbar() {
       >
         LET'S TALK ↗
       </a>
-<<<<<<< HEAD
-=======
 
       {/* MOBILE MENU TOGGLE */}
 
@@ -353,7 +331,6 @@ function Navbar() {
           LET'S TALK ↗
         </a>
       </div>
->>>>>>> 178bdd83bc2214667aa41b957e4c74690f28f5c7
     </nav>
   );
 }
